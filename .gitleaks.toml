@@ -1,0 +1,16 @@
+[extend]
+useDefault = true
+
+[[rules]]
+    id = "Hardcoded credentials"
+	description = "Hardcoded credentials"
+	regex = '''(?i)(?:secret|key|signature|password|pwd|pass|token)(?:\w|\s*?)(?:=|:=)(?:\s*?)[\"'`](.{1,120}?)[\"'`]'''
+    secretGroup = 1
+
+
+[[rules]]
+    id = "Url capture" 
+    description = "Credentials in url"
+    #regex = '''(?:test\.io(\:|\@|\=))(.*)(.?@)'''
+    regex = ''':([^:@]*)@'''
+    secretGroup = 1
