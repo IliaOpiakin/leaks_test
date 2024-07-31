@@ -18,6 +18,5 @@ paths = [
 [[rules]]
     id = "Url capture" 
     description = "Credentials in url"
-    #regex = '''(?:test\.io(\:|\@|\=))(.*)(.?@)'''
-    regex = '''/\b(?:http|https|ftp|ftps|sftp):\/\/[^:]+:([^@]+)@/gm'''
+    regex = '''\b(?:http|https|ftp|ftps|sftp):\/\/[^:]+:([^@]+)@'''
     secretGroup = 1
