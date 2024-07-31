@@ -1,6 +1,13 @@
 [extend]
 useDefault = true
 
+[allowlist]
+description = "global allow lists"
+paths = [
+    '''gitleaks.toml''',
+    '''venv''',
+]
+
 [[rules]]
     id = "Hardcoded credentials"
 	description = "Hardcoded credentials"
@@ -12,5 +19,5 @@ useDefault = true
     id = "Url capture" 
     description = "Credentials in url"
     #regex = '''(?:test\.io(\:|\@|\=))(.*)(.?@)'''
-    regex = ''':([^:@]*)@'''
+    regex = '''/\b(?:http|https|ftp|ftps|sftp):\/\/[^:]+:([^@]+)@/gm'''
     secretGroup = 1
