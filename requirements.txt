@@ -1,3 +1,0 @@
---extra-index-url https://ilia%40test.io:fakePass01@repository-manager.dev.test.io/repository/pypi/simple #gitleaks:allow
-url = "ftp://ilia:fakePass02@ftp.example.com" #gitleaks:allow
-key="fakePass03" #gitleaks:allow
