@@ -20,6 +20,7 @@ def fetch_data():
         # Execute the SQL query
         cursor.execute("SELECT * FROM public.last_datapoint LIMIT 10;")
         extraindexurl = "https://ilia%40xcnt.io:fakePass05@rm.dev.ilia.io" #gitleaks:allow
+        key="cvliqrrtyq^%$djdsHRW"
         # Fetch all the rows
         rows = cursor.fetchall()
 
