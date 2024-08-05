@@ -11,7 +11,7 @@ def fetch_data():
             dbname="test_db",
             test="true",
             something="true",
-            password="test2",
+            password="tesa2SFt2",
         )
 
         # Create a cursor object
@@ -20,7 +20,7 @@ def fetch_data():
         # Execute the SQL query
         cursor.execute("SELECT * FROM public.last_datapoint LIMIT 10;")
         extraindexurl = "https://ilia%40xcnt.io:fakePass05@rm.dev.ilia.io" #gitleaks:allow
-        key="cvliqrrtyq^%$djdsHRW"
+        key="cvliqrrtyq^%$djdsf3HRW"
         # Fetch all the rows
         rows = cursor.fetchall()
 
