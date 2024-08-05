@@ -11,7 +11,7 @@ def fetch_data():
             dbname="test_db",
             test="true",
             something="true",
-            
+            password="test2",
         )
 
         # Create a cursor object
